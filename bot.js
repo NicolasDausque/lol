@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 const fs = require("fs");
+// const invent = require("./inventories.json");
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
@@ -21,23 +22,26 @@ client.on('message', msg => {
             // !ping
             case 'ping':
                 msg.channel.send("Tu es laid")
+                break;
             case 'help':
                 msg.channel.send(" ping help ")
+                break;
             case 'inventory':
                 let invent = JSON.parse(fs.readFileSync("./inventories.json", "utf8"));
-                if (option1 == "add"){
+                if (option1 == "addUser"){
                     invent[msg.author.id] = {
                         sac : "un bon gros boule"
                     };
-                    fs.writeFile("./inventories.json", JSON.stringify(invent))
+                    fs.writeFile("./inventories.json", JSON.stringify(invent),function(err, result) {
+                        if(err) console.log('error', err);
+                      })
                 } else {
                     msg.channel.send(invent[msg.author.id].sac);
                 }
                 
             break;
-            // Just add any case commands if you want to..
          }
      }
   })
-
-client.login(process.env.BOT_TOKEN)
+// process.env.BOT_TOKEN
+client.login("process.env.BOT_TOKEN")
