@@ -44,14 +44,15 @@ client.on('message', msg => {
                 }
                 else {
                     var michelo = "";
-                    invent[msg.author.id].sac.forEach(element => {
-                        michelo.concat(element + "\n")
-                    });
+                    for (let index = 0; index < invent[msg.author.id].sac.length; index++) {
+                        michelo.concat(invent[msg.author.id].sac[index] + "\n");
+                    }
+
                     msg.channel.send(michelo);
                 }
                 break;
         }
     }
-  })
+})
 // process.env.BOT_TOKEN
 client.login(process.env.BOT_TOKEN)
