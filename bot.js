@@ -29,15 +29,27 @@ client.on('message', msg => {
             case 'inventory':
                 let invent = JSON.parse(fs.readFileSync("./inventories.json", "utf8"));
                 if (option1 == "addUser"){
-                    invent[msg.author.id] = {
-                        sac : "un bon gros boule"
-                    };
-                    fs.writeFile("./inventories.json", JSON.stringify(invent),function(err, result) {
-                        if(err) console.log('error', err);
-                      })
-                } else {
-                    msg.channel.send(invent[msg.author.id].sac);
+                    if (invent[msg.author.id] != null) {
+                        invent[msg.author.id] = {sac : []};
+                        fs.writeFile("./inventories.json", JSON.stringify(invent),function(err, result) {if(err) console.log('error', err);})
+                    }
                 }
+                if (option1 == "add"){
+                    var option2;
+                    if (args.length >= 2){
+                        option2 = args[2];
+                        invent[msg.author.id].sac[invent[msg.author.id].sac.length] = option2;
+                        fs.writeFile("./inventories.json", JSON.stringify(invent),function(err, result) { if(err) console.log('error', err);})
+                    }
+                }
+                else {
+                    var michelo= "";
+                    invent[msg.author.id].sac.forEach(element => {
+                        michelo.concat(element+"\n")
+                    });
+                    msg.channel.send(michelo);
+                }
+            }
                 
             break;
          }
