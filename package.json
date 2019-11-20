@@ -2,10 +2,10 @@
     "name": "Bisounours",
     "version": "1.0.0",
     "description": "Jolikoud",
-    "main": "main.js",
+    "main": "bot.js",
     "author": "Aniel-sama",
     "scripts": {
-        "start": "node main.js"
+        "start": "node bot.js"
     },
     "dependencies": {
         "discord.io": "^2.5.3",
