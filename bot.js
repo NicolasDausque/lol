@@ -40,9 +40,6 @@ client.on('message', msg => {
      }
   })
 
-  client.on('typingStart',  (chan,util) => {
-    chan.send("Stoppe écrire "+ util )
-
 })
 
 client.login(process.env.BOT_TOKEN)
