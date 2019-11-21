@@ -7,7 +7,14 @@ Toute commande commencera par le préfixe & mais il est susceptible de changer.
 ### Commandes basiques
 
 - help
+- fastHelp
 - ping
+- TableFlipped
+- DeathWishOscuro
+- DisrespectIris
+- ConqVath
+- ChouinAniel
+- RageVahelia
 
 ### Commandes plus évoluées
 
