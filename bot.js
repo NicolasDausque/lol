@@ -210,6 +210,7 @@ client.on('message', msg => {
                         break;
 
                 }
+                break;
             case 'MJ':
                 let users = JSON.parse(fs.readFileSync("./users.json", "utf8"));
                 let us = 1;
@@ -236,4 +237,4 @@ client.on('message', msg => {
 })
 
 // 
-client.login(process.env.BOT_TOKEN)
+client.login("NjQ2NjI0NjA1Nzc1MDY5MTg1.XdW3yg.S_8JBS30Aj7O1SPEkEJto0t81Qs")
