@@ -1,1 +1,34 @@
-{"RageVahelia":2,"TableFlipped":0,"DeathWishOscuro":0,"DisrespectIris":1,"ConqVath":1,"ChouinAniel":2,"119138831617359872":{"name":"Aniel","sac":["Un livre qui résoud des problèmes","Une baguette","Du papier magique","Un flacon anti rhume"],"powers":["Experliermus","Halo Maura","Boule de feu","Flammèche","Lumos / Nox"]},"229660777957556225":{"name":"Vath'ten","sac":[],"powers":[]},"647182820824842241":{"name":"Vahélia","sac":[],"powers":[]}}
+{
+    "RageVahelia": 2,
+    "TableFlipped": 0,
+    "DeathWishOscuro": 0,
+    "DisrespectIris": 1,
+    "ConqVath": 1,
+    "ChouinAniel": 2,
+    "119138831617359872": {
+        "name": "Aniel",
+        "sac": [
+            "Un livre qui résoud des problèmes",
+            "Une baguette",
+            "Du papier magique",
+            "Un flacon anti rhume"
+        ],
+        "powers": [
+            "Experliermus",
+            "Halo Maura",
+            "Boule de feu",
+            "Flammèche",
+            "Lumos / Nox"
+        ]
+    },
+    "229660777957556225": {
+        "name": "Vath'ten",
+        "sac": [],
+        "powers": []
+    },
+    "647182820824842241": {
+        "name": "Vahélia",
+        "sac": ["Un flacon anti rhume","Du papier et un crayon","une pièce atlante","pierres"],
+        "powers": ["Lumos / Nox","Halo Maura","Invocation","Recherche de pierres"]
+    }
+}

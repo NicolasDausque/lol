@@ -10,7 +10,8 @@ client.on('ready', () => {
 
 
 client.on('message', msg => {
-    if (msg.content.substring(0, 1) == '&' /*process.env.PREFIX*/) {
+    if (msg.content.substring(0, 1) == /*'&' */process.env.PREFIX) {
+        console.log(msg.content);
         var args = msg.content.substring(1).split(' ');
         var cmd = args[0];
 
